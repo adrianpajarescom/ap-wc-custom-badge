@@ -4,7 +4,7 @@
  * Plugin Name:       adrianpajares.com - Custom Badge for WooCommerce (New and Sale)
  * Plugin URI:        https://adrianpajares.com/
  * Description:       Plugin to customize the WooCommerce Badge. Get new and sale badge together with a custom style. Shortcode: [ap_wc_badge]
- * Version:           1.0
+ * Version:           1.1
  * Author:            adrianpajares.com
  * License:           MIT
 */
