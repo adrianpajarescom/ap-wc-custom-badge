@@ -10,7 +10,7 @@
 */
 
 //add_action( 'admin_menu', 'ap_tools_add_admin_menu' );
-add_action( 'admin_init', 'ap_tools_settings_init' );
+add_action( 'admin_init', 'ap_tools_settings_init_2' );
 
 /*
 function ap_tools_add_admin_menu(  ) { 
@@ -21,7 +21,7 @@ function ap_tools_add_admin_menu(  ) {
 */
 
 
-function ap_tools_settings_init(  ) { 
+function ap_tools_settings_init_2(  ) { 
 
 	register_setting( 'pluginPage', 'ap_tools_settings' );
 
