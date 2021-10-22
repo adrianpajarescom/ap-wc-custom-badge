@@ -73,13 +73,6 @@ function ap_tools_text_field_3_render(  ) {
 }
 
 
-function ap_tools_settings_section_callback(  ) { 
-
-	echo __( 'SECTION BADGE This section description', 'td_ap_tools' );
-
-}
-
-
 function ap_new_badge() {
 
     if ( \Elementor\Plugin::$instance->editor->is_edit_mode() ) {
