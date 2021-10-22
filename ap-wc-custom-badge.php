@@ -10,7 +10,7 @@
 */
 
 //add_action( 'admin_menu', 'ap_tools_add_admin_menu' );
-add_action( 'admin_init', 'ap_tools_settings_init_2' );
+add_action( 'admin_init', 'ap_tools_settings_init_ap_wc_custom_badge' );
 
 /*
 function ap_tools_add_admin_menu(  ) { 
@@ -21,7 +21,7 @@ function ap_tools_add_admin_menu(  ) {
 */
 
 
-function ap_tools_settings_init_2(  ) { 
+function ap_tools_settings_init_ap_wc_custom_badge(  ) { 
 
 	register_setting( 'pluginPage', 'ap_tools_settings' );
 
@@ -45,7 +45,7 @@ function ap_tools_settings_init_2(  ) {
 
 	add_settings_field( 
 		'ap_tools_text_field_1', 
-		__( 'Settings field description', 'td_ap_tools' ), 
+		__( 'Badge "New" text', 'td_ap_tools' ), 
 		'ap_tools_text_field_1_render', 
 		'pluginPage', 
 		'ap_tools_pluginPage_section' 
@@ -53,7 +53,7 @@ function ap_tools_settings_init_2(  ) {
 
 	add_settings_field( 
 		'ap_tools_text_field_2', 
-		__( 'Settings field description', 'td_ap_tools' ), 
+		__( 'Badge "New" days', 'td_ap_tools' ), 
 		'ap_tools_text_field_2_render', 
 		'pluginPage', 
 		'ap_tools_pluginPage_section' 
@@ -61,7 +61,7 @@ function ap_tools_settings_init_2(  ) {
 
 	add_settings_field( 
 		'ap_tools_text_field_3', 
-		__( 'Settings field description', 'td_ap_tools' ), 
+		__( 'Badge "Sale" text', 'td_ap_tools' ), 
 		'ap_tools_text_field_3_render', 
 		'pluginPage', 
 		'ap_tools_pluginPage_section' 
@@ -95,7 +95,7 @@ function ap_tools_text_field_2_render(  ) {
 
 	$options = get_option( 'ap_tools_settings' );
 	?>
-	<input type='text' name='ap_tools_settings[ap_tools_text_field_2]' value='<?php echo $options['ap_tools_text_field_2']; ?>'>
+	<input type='number' name='ap_tools_settings[ap_tools_text_field_2]' value='<?php echo $options['ap_tools_text_field_2']; ?>'>
 	<?php
 
 }
