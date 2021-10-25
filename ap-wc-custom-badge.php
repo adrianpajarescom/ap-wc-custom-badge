@@ -104,7 +104,7 @@ function ap_new_badge() {
 		$options = get_option( 'ap_tools_settings' );
 
         global $product;
-        $newness_days = $options['ap_tools_text_field_1']; // Number of days the "NEW" badge is shown
+        $newness_days = 40; // Number of days the "NEW" badge is shown
         $created = strtotime( $product->get_date_created() );
 
         // Get product prices
