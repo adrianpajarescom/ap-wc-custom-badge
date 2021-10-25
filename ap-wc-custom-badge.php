@@ -9,6 +9,19 @@
  * License:           MIT
 */
 
+add_action( 'wp_enqueue_scripts', 'ap_enqueue_styles' );
+
+function ap_enqueue_styles() {	
+	
+	$file_url = plugins_url(
+		'stylesheet.css', __FILE__
+	);
+
+	wp_enqueue_style( 
+		'sp_sytlesheet', $file_url
+	);
+}
+
 add_action( 'admin_init', 'ap_tools_settings_init_ap_wc_custom_badge' );
 
 
