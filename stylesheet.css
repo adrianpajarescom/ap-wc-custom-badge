@@ -1,3 +1,25 @@
-h1 {
-    color: red;
+.ap-badge-new {
+	background-color: #68D237;
+	font-family: Work Sans;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: white;
+	border-radius: 4px;
+	padding: 6px 12px;
+	margin: 2px;
+}
+
+.ap-badge-onsale {
+	background-color: #FF8154;
+	font-family: Work Sans;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 18px;
+	color: white;
+	border-radius: 4px;
+	padding: 6px 12px;
+	margin: 2px;
 }
