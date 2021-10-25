@@ -4,7 +4,7 @@
  * Plugin Name:       adrianpajares.com - Custom Badge for WooCommerce (New and Sale)
  * Plugin URI:        https://adrianpajares.com/
  * Description:       Plugin to customize the WooCommerce Badge. Get new and sale badge together with a custom style. Shortcode: [ap_wc_badge]
- * Version:           1.1
+ * Version:           2.1
  * Author:            adrianpajares.com
  * License:           MIT
 */
@@ -104,7 +104,10 @@ function ap_new_badge() {
 		$options = get_option( 'ap_tools_settings' );
 
         global $product;
-        $newness_days = 40; // Number of days the "NEW" badge is shown
+
+		$num = $options['ap_tools_text_field_2'];
+		$int = (int)$num;
+        $newness_days = $int; // Number of days the "NEW" badge is shown
         $created = strtotime( $product->get_date_created() );
 
         // Get product prices
